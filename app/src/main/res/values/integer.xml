@@ -1,0 +1,7 @@
+<resources>
+    <integer name="incentive">1</integer>
+    <integer name="interstitial">2</integer>
+    <integer name="banner">3</integer>
+    <integer name="native_ad">4</integer>
+    <integer name="swipe">5</integer>
+</resources>

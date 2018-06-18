@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "hungnt.com.adstir"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    // com.android.support配下のライブラリのバージョンはプロジェクト内で同一バージョンを指定する必要があります
+    // 使用するadstir SDKのバージョンを指定します
+    def adstir_version = "2.12.0"
+//    implementation "com.ad-stir.webviewsdk:adstir-webviewsdk:${adstir_version}"
+//    // 動画リワード/全画面インタースティシャル広告で利用します
+//    implementation("com.ad-stir.mediationadapter:adstir-mediationadapter:${adstir_version}") {
+//        exclude module: 'adstir-mediationadapter-nend'
+//        exclude module: 'adstir-mediationadapter-applovin'
+//        exclude module: 'adstir-mediationadapter-vungle'
+//        exclude module: 'adstir-mediationadapter-tapjoy'
+//        exclude module: 'adstir-mediationadapter-mopub'
+//        exclude module: 'adstir-mediationadapter-careward'
+//    }
+//    // スワイプインタースティシャル広告で利用します
+//    implementation "com.ad-stir.mediationadapter:adstir-mediationadapter-zucks:${adstir_version}"
+
+//    プロジェクトで利用しているライブラリとadstirが依存位しているライブラリが衝突した場合、以下のようにして依存関係を除外できます
+//    compile("com.ad-stir.webviewsdk:adstir-webviewsdk:${adstir_version}") {
+//        exclude group: 'com.android.support', module: 'recyclerview-v7'
+//        exclude group: 'com.android.support', module: 'cardview-v7'
+//        exclude group: 'com.android.support', module: 'percent'
+//    }
+
+    // ご利用されているSupport Libraryのバージョンを記述してください
+    def support_library_version = "26.1.0"
+    configurations.all {
+        resolutionStrategy.force "com.android.support:recyclerview-v7:${support_library_version}"
+        resolutionStrategy.force "com.android.support:cardview-v7:${support_library_version}"
+        resolutionStrategy.force "com.android.support:percent:${support_library_version}"
+        resolutionStrategy.force "com.android.support:support-v4:${support_library_version}"
+        resolutionStrategy.force "com.android.support:support-annotations:${support_library_version}"
+    }
+
+    implementation "com.android.support:appcompat-v7:${support_library_version}"
+    implementation "com.android.support.constraint:constraint-layout:+"
+    implementation "com.google.android.gms:play-services-ads:+"
+    implementation "com.google.android.gms:play-services-base:+"
+    implementation "com.android.support:design:${support_library_version}"
+    implementation "com.android.support:support-v4:${support_library_version}"
+    implementation "com.android.support:multidex:1.0.3"
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
+}

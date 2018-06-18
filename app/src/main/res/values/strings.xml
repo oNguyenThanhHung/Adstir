@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Adstir</string>
+
+    <string name="banner_ad">Banner Ad</string>
+    <string name="swipe_interstitial_ad">Swipe Interstitial Ad</string>
+    <string name="native_ad">Native Ad</string>
+    <string name="interstitial_ad">Interstitial Ad</string>
+    <string name="insentivized_video">Incentivized Video</string>
+    <string name="adx_interstitial_ad">AdX Interstitial Ad</string>
+    <string name="adx_videoreward_ad">AdX Video Reward Ad</string>
+    <string name="adx_banner_ad">AdX Banner Ad</string>
+    <string name="banner_ad_desc">The ad such as 320x50, 300x250, 320x100.</string>
+    <string name="native_ad_desc">The ad that can be displayed in a layout that matches the content.</string>
+    <string name="insentivized_video_desc">The ad that can give incentive to user when the video is completed.</string>
+    <string name="interstitial_ad_desc">The fullscreen ad for video and image.</string>
+    <string name="swipe_ad_desc">The Swipeinterstitial can display full screen interstitial advertisements on user actions with swipes.</string>
+    <string name="adx_banner_ad_desc">The ad by Google Ad Exchange. That can use AdstirAds and AmazonAds as backfill.</string>
+    <string name="adx_interstitial_ad_desc">The fullscreen ad by Google Ad Exchange. That can use Adstir Interstitial Ads as backfill.</string>
+    <string name="adx_videoreward_ad_desc">The Video Reward ad by Google Ad Exchange. That can use Adstir Insentivized video Ads as backfill.</string>
+    <string name="reward_success">Reward Success!</string>
+    <string name="install">INSTALL NOW</string>
+    <string name="sponsored">SPONSORED</string>
+    <string name="banner_ad_unit_id">/34264398/adstir_5358_38426_133940</string>
+    <string name="interstitial_ad_unit_id">/34264398/adstir_5358_38426_95698</string>
+    <string name="videoreward_ad_unit_id">/34264398/adstir_5358_38426_89602</string>
+    <string name="help">Help/Contact</string>
+    <string name="version">Version</string>
+    <string name="contact_url">https://en.ad-stir.com/contact</string>
+    <string name="mediaId">MEDIA-f5fa1e60</string>
+    <string name="title_activity_swipe_interstitial">SwipeInterstitialActivity</string>
+    <string name="swipe_msg">Swipe! >>></string>
+    <string name="adstir_media_id">MEDIA-f5fa1e60</string>
+</resources>
