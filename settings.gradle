@@ -1,1 +1,1 @@
-include ':app', ':adstir-android-webviewsdk'
+include ':app', ':adstir-android-webviewsdk', ':adstir-mediationadapter-adcorsa', ':adstir-mediationadapter-imobile', ':adstir-mediationadapter-maio', ':adstir-mediationadapter-mobvista', ':adstir-mediationadapter-unityads', ':mobvista_alphab', ':mobvista_common', ':mobvista_mvdownloads', ':mobvista_mvjscommon', ':mobvista_playercommon', ':mobvista_reward', ':mobvista_videocommon', ':mobvista_videojs', ':unity-ads', ':adstir-mediationadapter-zucks'

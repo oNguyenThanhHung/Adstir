@@ -3,7 +3,23 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Adstir.iml" filepath="$PROJECT_DIR$/Adstir.iml" />
+      <module fileurl="file://$PROJECT_DIR$/adstir-android-webviewsdk/adstir-android-webviewsdk.iml" filepath="$PROJECT_DIR$/adstir-android-webviewsdk/adstir-android-webviewsdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/adstir-mediationadapter-adcorsa/adstir-mediationadapter-adcorsa.iml" filepath="$PROJECT_DIR$/adstir-mediationadapter-adcorsa/adstir-mediationadapter-adcorsa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/adstir-mediationadapter-imobile/adstir-mediationadapter-imobile.iml" filepath="$PROJECT_DIR$/adstir-mediationadapter-imobile/adstir-mediationadapter-imobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/adstir-mediationadapter-maio/adstir-mediationadapter-maio.iml" filepath="$PROJECT_DIR$/adstir-mediationadapter-maio/adstir-mediationadapter-maio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/adstir-mediationadapter-mobvista/adstir-mediationadapter-mobvista.iml" filepath="$PROJECT_DIR$/adstir-mediationadapter-mobvista/adstir-mediationadapter-mobvista.iml" />
+      <module fileurl="file://$PROJECT_DIR$/adstir-mediationadapter-unityads/adstir-mediationadapter-unityads.iml" filepath="$PROJECT_DIR$/adstir-mediationadapter-unityads/adstir-mediationadapter-unityads.iml" />
+      <module fileurl="file://$PROJECT_DIR$/adstir-mediationadapter-zucks/adstir-mediationadapter-zucks.iml" filepath="$PROJECT_DIR$/adstir-mediationadapter-zucks/adstir-mediationadapter-zucks.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mobvista_alphab/mobvista_alphab.iml" filepath="$PROJECT_DIR$/mobvista_alphab/mobvista_alphab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mobvista_common/mobvista_common.iml" filepath="$PROJECT_DIR$/mobvista_common/mobvista_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mobvista_mvdownloads/mobvista_mvdownloads.iml" filepath="$PROJECT_DIR$/mobvista_mvdownloads/mobvista_mvdownloads.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mobvista_mvjscommon/mobvista_mvjscommon.iml" filepath="$PROJECT_DIR$/mobvista_mvjscommon/mobvista_mvjscommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mobvista_playercommon/mobvista_playercommon.iml" filepath="$PROJECT_DIR$/mobvista_playercommon/mobvista_playercommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mobvista_reward/mobvista_reward.iml" filepath="$PROJECT_DIR$/mobvista_reward/mobvista_reward.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mobvista_videocommon/mobvista_videocommon.iml" filepath="$PROJECT_DIR$/mobvista_videocommon/mobvista_videocommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mobvista_videojs/mobvista_videojs.iml" filepath="$PROJECT_DIR$/mobvista_videojs/mobvista_videojs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/unity-ads/unity-ads.iml" filepath="$PROJECT_DIR$/unity-ads/unity-ads.iml" />
     </modules>
   </component>
 </project>

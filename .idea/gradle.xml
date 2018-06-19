@@ -9,7 +9,22 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/adstir-android-webviewsdk" />
+            <option value="$PROJECT_DIR$/adstir-mediationadapter-adcorsa" />
+            <option value="$PROJECT_DIR$/adstir-mediationadapter-imobile" />
+            <option value="$PROJECT_DIR$/adstir-mediationadapter-maio" />
+            <option value="$PROJECT_DIR$/adstir-mediationadapter-mobvista" />
+            <option value="$PROJECT_DIR$/adstir-mediationadapter-unityads" />
+            <option value="$PROJECT_DIR$/adstir-mediationadapter-zucks" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/mobvista_alphab" />
+            <option value="$PROJECT_DIR$/mobvista_common" />
+            <option value="$PROJECT_DIR$/mobvista_mvdownloads" />
+            <option value="$PROJECT_DIR$/mobvista_mvjscommon" />
+            <option value="$PROJECT_DIR$/mobvista_playercommon" />
+            <option value="$PROJECT_DIR$/mobvista_reward" />
+            <option value="$PROJECT_DIR$/mobvista_videocommon" />
+            <option value="$PROJECT_DIR$/mobvista_videojs" />
+            <option value="$PROJECT_DIR$/unity-ads" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

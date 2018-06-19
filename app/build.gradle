@@ -24,29 +24,48 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    api fileTree(include: ['*.jar'], dir: 'libs')
+
     // com.android.support配下のライブラリのバージョンはプロジェクト内で同一バージョンを指定する必要があります
+
     // 使用するadstir SDKのバージョンを指定します
     def adstir_version = "2.12.0"
-//    implementation "com.ad-stir.webviewsdk:adstir-webviewsdk:${adstir_version}"
-//    // 動画リワード/全画面インタースティシャル広告で利用します
-//    implementation("com.ad-stir.mediationadapter:adstir-mediationadapter:${adstir_version}") {
-//        exclude module: 'adstir-mediationadapter-nend'
-//        exclude module: 'adstir-mediationadapter-applovin'
-//        exclude module: 'adstir-mediationadapter-vungle'
-//        exclude module: 'adstir-mediationadapter-tapjoy'
-//        exclude module: 'adstir-mediationadapter-mopub'
-//        exclude module: 'adstir-mediationadapter-careward'
-//    }
-//    // スワイプインタースティシャル広告で利用します
-//    implementation "com.ad-stir.mediationadapter:adstir-mediationadapter-zucks:${adstir_version}"
 
-//    プロジェクトで利用しているライブラリとadstirが依存位しているライブラリが衝突した場合、以下のようにして依存関係を除外できます
-//    compile("com.ad-stir.webviewsdk:adstir-webviewsdk:${adstir_version}") {
-//        exclude group: 'com.android.support', module: 'recyclerview-v7'
-//        exclude group: 'com.android.support', module: 'cardview-v7'
-//        exclude group: 'com.android.support', module: 'percent'
-//    }
+    //    implementation "com.ad-stir.webviewsdk:adstir-webviewsdk:${adstir_version}"
+
+    //    // 動画リワード/全画面インタースティシャル広告で利用します
+
+    //    implementation("com.ad-stir.mediationadapter:adstir-mediationadapter:${adstir_version}") {
+
+    //        exclude module: 'adstir-mediationadapter-nend'
+
+    //        exclude module: 'adstir-mediationadapter-applovin'
+
+    //        exclude module: 'adstir-mediationadapter-vungle'
+
+    //        exclude module: 'adstir-mediationadapter-tapjoy'
+
+    //        exclude module: 'adstir-mediationadapter-mopub'
+
+    //        exclude module: 'adstir-mediationadapter-careward'
+
+    //    }
+
+    //    // スワイプインタースティシャル広告で利用します
+
+    //    implementation "com.ad-stir.mediationadapter:adstir-mediationadapter-zucks:${adstir_version}"
+
+    //    プロジェクトで利用しているライブラリとadstirが依存位しているライブラリが衝突した場合、以下のようにして依存関係を除外できます
+
+    //    compile("com.ad-stir.webviewsdk:adstir-webviewsdk:${adstir_version}") {
+
+    //        exclude group: 'com.android.support', module: 'recyclerview-v7'
+
+    //        exclude group: 'com.android.support', module: 'cardview-v7'
+
+    //        exclude group: 'com.android.support', module: 'percent'
+
+    //    }
 
     // ご利用されているSupport Libraryのバージョンを記述してください
     def support_library_version = "26.1.0"
@@ -57,15 +76,30 @@ dependencies {
         resolutionStrategy.force "com.android.support:support-v4:${support_library_version}"
         resolutionStrategy.force "com.android.support:support-annotations:${support_library_version}"
     }
-
     implementation "com.android.support:appcompat-v7:${support_library_version}"
-    implementation "com.android.support.constraint:constraint-layout:+"
-    implementation "com.google.android.gms:play-services-ads:+"
-    implementation "com.google.android.gms:play-services-base:+"
+    implementation 'com.android.support.constraint:constraint-layout:+'
+    implementation 'com.google.android.gms:play-services-ads:+'
+    implementation 'com.google.android.gms:play-services-base:+'
     implementation "com.android.support:design:${support_library_version}"
     implementation "com.android.support:support-v4:${support_library_version}"
-    implementation "com.android.support:multidex:1.0.3"
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.2.41"
+    implementation project(':adstir-android-webviewsdk')
+    implementation project(':adstir-mediationadapter-adcorsa')
+    implementation project(':adstir-mediationadapter-imobile')
+    implementation project(':adstir-mediationadapter-maio')
+    implementation project(':adstir-mediationadapter-mobvista')
+    implementation project(':adstir-mediationadapter-unityads')
+    implementation project(':adstir-mediationadapter-zucks')
+    implementation project(':mobvista_alphab')
+    implementation project(':mobvista_common')
+    implementation project(':mobvista_mvdownloads')
+    implementation project(':mobvista_mvjscommon')
+    implementation project(':mobvista_playercommon')
+    implementation project(':mobvista_reward')
+    implementation project(':mobvista_videocommon')
+    implementation project(':mobvista_videojs')
+    implementation project(':unity-ads')
 }
 repositories {
     mavenCentral()

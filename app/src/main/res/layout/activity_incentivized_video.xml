@@ -1,192 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="@dimen/padding">
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="@dimen/logo"
-        android:layout_height="@dimen/logo"
-        android:layout_alignParentTop="true"
-        app:srcCompat="@mipmap/adstir" />
-
     <TextView
-        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/insentivized_video"
-        android:layout_alignTop="@+id/logo"
-        android:layout_toRightOf="@+id/logo"
-        android:layout_toEndOf="@+id/logo"
-        android:layout_marginLeft="@dimen/middlePadding"
-        android:textSize="@dimen/text"/>
+        android:text="Media User id"
+        android:textSize="@dimen/text"
+        android:visibility="gone" />
 
     <EditText
         android:id="@+id/description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/title"
-        android:layout_alignStart="@+id/title"
-        android:layout_below="@+id/title"
-        android:layout_alignBottom="@+id/logo"/>
+        android:text="androidVideo01" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="@dimen/padding"
-        android:background="@color/colorLoaderArea"
-        android:layout_below="@+id/logo">
+    <Button
+        android:id="@+id/button_play"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_rounded_corners"
+        android:padding="10dp"
+        android:text="Play"
+        android:textColor="@color/colorButtonText" />
 
+    <Button
+        android:id="@+id/button_play1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_rounded_corners"
+        android:padding="10dp"
+        android:text="Play not set id"
+        android:textColor="@color/colorButtonText" />
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true">
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Status"
-                android:textColor="@color/colorLoaderStatusText"
-                android:background="@color/colorLoaderStatusBackground"
-                android:layout_marginLeft="@dimen/padding"
-                android:layout_marginRight="@dimen/padding"
-                android:padding="@dimen/textPadding"
-                android:id="@+id/status" />
-
-            <LinearLayout
-                android:id="@+id/statuses"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_below="@+id/status"
-                android:layout_alignLeft="@+id/status"
-                android:layout_alignStart="@+id/status"
-                android:layout_alignRight="@+id/status"
-                android:layout_alignEnd="@+id/status">
-
-                <TextView
-                    android:id="@+id/status_waiting"
-                    android:layout_weight="1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Waiting"
-                    android:gravity="center"
-                    android:textColor="@color/colorActiveStatusText"
-                    android:background="@color/colorActiveStatusBackground"
-                    android:padding="@dimen/textPadding"
-                    />
-                <TextView
-                    android:id="@+id/status_loading"
-                    android:layout_weight="1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Loading"
-                    android:gravity="center"
-                    android:textColor="@color/colorInactiveStatusText"
-                    android:background="@color/colorInactiveStatusBackground"
-                    android:padding="@dimen/textPadding"
-                    />
-                <TextView
-                    android:id="@+id/status_loaded"
-                    android:layout_weight="1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Loaded"
-                    android:gravity="center"
-                    android:textColor="@color/colorInactiveStatusText"
-                    android:background="@color/colorInactiveStatusBackground"
-                    android:padding="@dimen/textPadding"
-                    />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/buttons"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="@dimen/middlePadding"
-                android:layout_below="@+id/statuses"
-                android:layout_alignLeft="@+id/status"
-                android:layout_alignStart="@+id/status"
-                android:layout_alignRight="@+id/status"
-                android:layout_alignEnd="@+id/status">
-
-                <Button
-                    android:id="@+id/button_load"
-                    style="@style/Widget.AppCompat.Button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/status"
-                    android:layout_alignStart="@+id/status"
-                    android:layout_below="@+id/statuses"
-                    android:layout_weight="1"
-                    android:background="@drawable/shape_rounded_corners"
-                    android:stateListAnimator="@null"
-                    android:textColor="@color/colorButtonText"
-                    android:text="Load" />
-
-                    <Space android:layout_width="@dimen/middlePadding"
-                android:layout_height="wrap_content"/>
-
-                <Button
-                    android:id="@+id/button_play"
-                    android:layout_weight="1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/statuses"
-                    android:layout_alignLeft="@+id/status"
-                    android:layout_alignStart="@+id/status"
-                    android:background="@drawable/shape_rounded_corners"
-                    android:stateListAnimator="@null"
-                    android:textColor="@color/colorButtonText"
-                    android:text="Play" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:layout_marginTop="@dimen/middlePadding"
-                android:layout_below="@+id/buttons"
-                android:layout_alignLeft="@+id/status"
-                android:layout_alignStart="@+id/status"
-                android:layout_alignRight="@+id/status"
-                android:layout_alignEnd="@+id/status">
-
-                <ImageView
-
-                    android:layout_width="@dimen/point"
-                    android:layout_height="@dimen/point"
-                    android:src="@mipmap/point" />
-
-                    <Space android:layout_width="@dimen/textPadding"
-                android:layout_height="wrap_content"/>
-
-                <TextView
-                    android:id="@+id/reward"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="@dimen/pointText"
-                    android:text="0" />
-
-            </LinearLayout>
-
-
-
-        </RelativeLayout>
-
-    </RelativeLayout>
-
-</RelativeLayout>
+</LinearLayout>

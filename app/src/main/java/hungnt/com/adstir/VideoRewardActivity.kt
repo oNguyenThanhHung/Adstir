@@ -20,7 +20,6 @@ class VideoRewardActivity : AppCompatActivity() {
 
         button_play.setOnClickListener {
             AdstirVideoAds.setMediaUserID(description.text.toString())
-
             if (adstirVideoReward.canShow()) {
                 Log.d("hung1234", "showRewardVideo")
                 Toast.makeText(this@VideoRewardActivity, "showRewardVideo", Toast.LENGTH_SHORT).show()
@@ -31,7 +30,16 @@ class VideoRewardActivity : AppCompatActivity() {
             }
         }
 
-        description.setText("androidVideo01")
+        button_play1.setOnClickListener {
+            if (adstirVideoReward.canShow()) {
+                Log.d("hung1234", "showRewardVideo")
+                Toast.makeText(this@VideoRewardActivity, "showRewardVideo", Toast.LENGTH_SHORT).show()
+                adstirVideoReward.showRewardVideo()
+            } else {
+                Log.d("hung1234", "loadVideo")
+                adstirVideoReward.load()
+            }
+        }
     }
 
     private val listener = object : AdstirVideoRewardListener {
