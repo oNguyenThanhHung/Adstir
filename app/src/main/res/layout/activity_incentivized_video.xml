@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:text="Media User id"
         android:textSize="@dimen/text"
-        android:visibility="gone" />
+        android:visibility="visible" />
 
     <EditText
         android:id="@+id/description"
@@ -26,16 +26,6 @@
         android:background="@drawable/shape_rounded_corners"
         android:padding="10dp"
         android:text="Play"
-        android:textColor="@color/colorButtonText" />
-
-    <Button
-        android:id="@+id/button_play1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/shape_rounded_corners"
-        android:padding="10dp"
-        android:text="Play not set id"
         android:textColor="@color/colorButtonText" />
 
 </LinearLayout>
