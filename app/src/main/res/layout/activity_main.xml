@@ -32,15 +32,6 @@
         tools:layout_editor_absoluteY="89dp" />
 
     <Button
-        android:id="@+id/btnLoadVideoWithoutUserId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Load Withoud MediaUserId"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="89dp" />
-
-    <Button
         android:id="@+id/btnShowVideo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
